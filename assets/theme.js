@@ -5,7 +5,7 @@
    ShopAPI module for fetch('/cart.js'), /products.json, etc.
    ============================================================ */
 
-const DATA_URL = 'data/products.json';
+const DATA_URL = 'data/products.json?v=2';
 const CART_KEY = 'sonido:cart:v1';
 
 /* ---------- Data layer (Shopify-compatible shape) ---------- */
@@ -447,12 +447,13 @@ function wireGlobalUI() {
 }
 
 /* ---------- Section loader (mirrors Shopify's {% section 'x' %}) ---------- */
+const THEME_VERSION = '2';
 async function loadSections() {
   const slots = document.querySelectorAll('[data-section]');
   await Promise.all(Array.from(slots).map(async (slot) => {
     const name = slot.getAttribute('data-section');
     try {
-      const res = await fetch(`sections/${name}.html`);
+      const res = await fetch(`sections/${name}.html?v=${THEME_VERSION}`, { cache: 'no-cache' });
       slot.innerHTML = await res.text();
     } catch (err) {
       console.error(`Failed to load section: ${name}`, err);
