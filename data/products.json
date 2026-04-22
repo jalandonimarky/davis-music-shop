@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 8001001,
-      "title": "Davis JG-38 Acoustic Guitar",
-      "handle": "davis-jg-38-acoustic",
+      "title": "JMarky's JG-38 Acoustic Guitar",
+      "handle": "jmarkys-jg-38-acoustic",
       "description": "38-inch cutaway acoustic with linden top and mahogany-finish back and sides. Balanced projection, comfortable neck profile, and a warm voice that rewards both strummers and fingerstyle players.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Acoustic Guitar",
       "tags": ["guitar", "acoustic", "beginner", "cutaway"],
       "available": true,
@@ -15,17 +15,17 @@
         { "name": "Finish", "position": 1, "values": ["Natural", "Sunburst", "Matte Black"] }
       ],
       "variants": [
-        { "id": 80010011, "title": "Natural", "option1": "Natural", "price": "4999.00", "compare_at_price": "5500.00", "sku": "DVS-JG38-NAT", "available": true, "inventory_quantity": 18 },
-        { "id": 80010012, "title": "Sunburst", "option1": "Sunburst", "price": "4999.00", "compare_at_price": null, "sku": "DVS-JG38-SB", "available": true, "inventory_quantity": 11 },
-        { "id": 80010013, "title": "Matte Black", "option1": "Matte Black", "price": "5199.00", "compare_at_price": null, "sku": "DVS-JG38-MBLK", "available": true, "inventory_quantity": 7 }
+        { "id": 80010011, "title": "Natural", "option1": "Natural", "price": "4999.00", "compare_at_price": "5500.00", "sku": "JMK-JG38-NAT", "available": true, "inventory_quantity": 18 },
+        { "id": 80010012, "title": "Sunburst", "option1": "Sunburst", "price": "4999.00", "compare_at_price": null, "sku": "JMK-JG38-SB", "available": true, "inventory_quantity": 11 },
+        { "id": 80010013, "title": "Matte Black", "option1": "Matte Black", "price": "5199.00", "compare_at_price": null, "sku": "JMK-JG38-MBLK", "available": true, "inventory_quantity": 7 }
       ]
     },
     {
       "id": 8001002,
-      "title": "Davis JG-41 Jumbo Acoustic",
-      "handle": "davis-jg-41-jumbo",
+      "title": "JMarky's JG-41 Jumbo Acoustic",
+      "handle": "jmarkys-jg-41-jumbo",
       "description": "Full-size 41-inch jumbo body delivering bold low-end and stage-ready volume. Select spruce top with dark walnut rosette. Slim-profile neck and smooth satin finish.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Acoustic Guitar",
       "tags": ["guitar", "acoustic", "jumbo"],
       "available": true,
@@ -35,16 +35,16 @@
         { "name": "Finish", "position": 1, "values": ["Vintage Sunburst", "Natural"] }
       ],
       "variants": [
-        { "id": 80010021, "title": "Vintage Sunburst", "option1": "Vintage Sunburst", "price": "6499.00", "compare_at_price": "7200.00", "sku": "DVS-JG41-VSB", "available": true, "inventory_quantity": 6 },
-        { "id": 80010022, "title": "Natural", "option1": "Natural", "price": "6299.00", "compare_at_price": null, "sku": "DVS-JG41-NAT", "available": true, "inventory_quantity": 4 }
+        { "id": 80010021, "title": "Vintage Sunburst", "option1": "Vintage Sunburst", "price": "6499.00", "compare_at_price": "7200.00", "sku": "JMK-JG41-VSB", "available": true, "inventory_quantity": 6 },
+        { "id": 80010022, "title": "Natural", "option1": "Natural", "price": "6299.00", "compare_at_price": null, "sku": "JMK-JG41-NAT", "available": true, "inventory_quantity": 4 }
       ]
     },
     {
       "id": 8001003,
-      "title": "Davis Junior 34\" Acoustic Guitar",
-      "handle": "davis-junior-34-acoustic",
+      "title": "JMarky's Junior 34\" Acoustic Guitar",
+      "handle": "jmarkys-junior-34-acoustic",
       "description": "Scaled-down 34-inch acoustic ideal for students, travelers, and younger players. Lightweight body, low-action setup straight out of the box, and forgiving nylon-friendly neck.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Acoustic Guitar",
       "tags": ["guitar", "acoustic", "beginner", "junior", "travel"],
       "available": true,
@@ -54,17 +54,17 @@
         { "name": "Color", "position": 1, "values": ["Natural", "Red Burst", "Blue"] }
       ],
       "variants": [
-        { "id": 80010031, "title": "Natural", "option1": "Natural", "price": "2799.00", "compare_at_price": "3200.00", "sku": "DVS-JR34-NAT", "available": true, "inventory_quantity": 22 },
-        { "id": 80010032, "title": "Red Burst", "option1": "Red Burst", "price": "2899.00", "compare_at_price": null, "sku": "DVS-JR34-RB", "available": true, "inventory_quantity": 14 },
-        { "id": 80010033, "title": "Blue", "option1": "Blue", "price": "2899.00", "compare_at_price": null, "sku": "DVS-JR34-BLU", "available": true, "inventory_quantity": 9 }
+        { "id": 80010031, "title": "Natural", "option1": "Natural", "price": "2799.00", "compare_at_price": "3200.00", "sku": "JMK-JR34-NAT", "available": true, "inventory_quantity": 22 },
+        { "id": 80010032, "title": "Red Burst", "option1": "Red Burst", "price": "2899.00", "compare_at_price": null, "sku": "JMK-JR34-RB", "available": true, "inventory_quantity": 14 },
+        { "id": 80010033, "title": "Blue", "option1": "Blue", "price": "2899.00", "compare_at_price": null, "sku": "JMK-JR34-BLU", "available": true, "inventory_quantity": 9 }
       ]
     },
     {
       "id": 8001004,
-      "title": "Davis DA-550 Electric Guitar",
-      "handle": "davis-da-550-electric",
+      "title": "JMarky's DA-550 Electric Guitar",
+      "handle": "jmarkys-da-550-electric",
       "description": "S-style electric guitar with three single-coil pickups, 5-way selector, and tremolo bridge. Poplar body, hard-maple neck, and rosewood fingerboard — gig-ready with a versatile tonal range.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Electric Guitar",
       "tags": ["guitar", "electric", "stratocaster-style"],
       "available": true,
@@ -74,18 +74,18 @@
         { "name": "Color", "position": 1, "values": ["3-Tone Sunburst", "Candy Apple Red", "Olympic White", "Jet Black"] }
       ],
       "variants": [
-        { "id": 80010041, "title": "3-Tone Sunburst", "option1": "3-Tone Sunburst", "price": "7999.00", "compare_at_price": "8800.00", "sku": "DVS-DA550-3TSB", "available": true, "inventory_quantity": 10 },
-        { "id": 80010042, "title": "Candy Apple Red", "option1": "Candy Apple Red", "price": "7999.00", "compare_at_price": null, "sku": "DVS-DA550-CAR", "available": true, "inventory_quantity": 6 },
-        { "id": 80010043, "title": "Olympic White", "option1": "Olympic White", "price": "7999.00", "compare_at_price": null, "sku": "DVS-DA550-OWH", "available": true, "inventory_quantity": 8 },
-        { "id": 80010044, "title": "Jet Black", "option1": "Jet Black", "price": "7999.00", "compare_at_price": null, "sku": "DVS-DA550-JBK", "available": false, "inventory_quantity": 0 }
+        { "id": 80010041, "title": "3-Tone Sunburst", "option1": "3-Tone Sunburst", "price": "7999.00", "compare_at_price": "8800.00", "sku": "JMK-DA550-3TSB", "available": true, "inventory_quantity": 10 },
+        { "id": 80010042, "title": "Candy Apple Red", "option1": "Candy Apple Red", "price": "7999.00", "compare_at_price": null, "sku": "JMK-DA550-CAR", "available": true, "inventory_quantity": 6 },
+        { "id": 80010043, "title": "Olympic White", "option1": "Olympic White", "price": "7999.00", "compare_at_price": null, "sku": "JMK-DA550-OWH", "available": true, "inventory_quantity": 8 },
+        { "id": 80010044, "title": "Jet Black", "option1": "Jet Black", "price": "7999.00", "compare_at_price": null, "sku": "JMK-DA550-JBK", "available": false, "inventory_quantity": 0 }
       ]
     },
     {
       "id": 8001005,
-      "title": "Davis HB-1 Hollowbody Electric",
-      "handle": "davis-hb-1-hollowbody",
+      "title": "JMarky's HB-1 Hollowbody Electric",
+      "handle": "jmarkys-hb-1-hollowbody",
       "description": "Semi-hollow archtop with twin humbuckers and classic F-hole styling. Warm, breathy tone for jazz, blues, and indie — with enough bite to hold its own on a loud stage.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Electric Guitar",
       "tags": ["guitar", "electric", "hollowbody", "jazz"],
       "available": true,
@@ -95,16 +95,16 @@
         { "name": "Color", "position": 1, "values": ["Cherry Red", "Tobacco Burst"] }
       ],
       "variants": [
-        { "id": 80010051, "title": "Cherry Red", "option1": "Cherry Red", "price": "12499.00", "compare_at_price": "13500.00", "sku": "DVS-HB1-CR", "available": true, "inventory_quantity": 4 },
-        { "id": 80010052, "title": "Tobacco Burst", "option1": "Tobacco Burst", "price": "12499.00", "compare_at_price": null, "sku": "DVS-HB1-TB", "available": true, "inventory_quantity": 2 }
+        { "id": 80010051, "title": "Cherry Red", "option1": "Cherry Red", "price": "12499.00", "compare_at_price": "13500.00", "sku": "JMK-HB1-CR", "available": true, "inventory_quantity": 4 },
+        { "id": 80010052, "title": "Tobacco Burst", "option1": "Tobacco Burst", "price": "12499.00", "compare_at_price": null, "sku": "JMK-HB1-TB", "available": true, "inventory_quantity": 2 }
       ]
     },
     {
       "id": 8001006,
-      "title": "Davis BG-4 Bass Guitar",
-      "handle": "davis-bg-4-bass",
+      "title": "JMarky's BG-4 Bass Guitar",
+      "handle": "jmarkys-bg-4-bass",
       "description": "4-string P/J-style bass with active electronics, maple neck, and contoured alder body. Low action, punchy mid-range, and an SLB-balanced output tailored for live gigs.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Bass Guitar",
       "tags": ["bass", "electric", "4-string"],
       "available": true,
@@ -114,17 +114,17 @@
         { "name": "Color", "position": 1, "values": ["Black", "Vintage White", "Sunburst"] }
       ],
       "variants": [
-        { "id": 80010061, "title": "Black", "option1": "Black", "price": "9999.00", "compare_at_price": "10900.00", "sku": "DVS-BG4-BK", "available": true, "inventory_quantity": 6 },
-        { "id": 80010062, "title": "Vintage White", "option1": "Vintage White", "price": "9999.00", "compare_at_price": null, "sku": "DVS-BG4-VW", "available": true, "inventory_quantity": 3 },
-        { "id": 80010063, "title": "Sunburst", "option1": "Sunburst", "price": "10299.00", "compare_at_price": null, "sku": "DVS-BG4-SB", "available": true, "inventory_quantity": 2 }
+        { "id": 80010061, "title": "Black", "option1": "Black", "price": "9999.00", "compare_at_price": "10900.00", "sku": "JMK-BG4-BK", "available": true, "inventory_quantity": 6 },
+        { "id": 80010062, "title": "Vintage White", "option1": "Vintage White", "price": "9999.00", "compare_at_price": null, "sku": "JMK-BG4-VW", "available": true, "inventory_quantity": 3 },
+        { "id": 80010063, "title": "Sunburst", "option1": "Sunburst", "price": "10299.00", "compare_at_price": null, "sku": "JMK-BG4-SB", "available": true, "inventory_quantity": 2 }
       ]
     },
     {
       "id": 8001007,
-      "title": "Davis DK-61 Digital Keyboard",
-      "handle": "davis-dk-61-keyboard",
+      "title": "JMarky's DK-61 Digital Keyboard",
+      "handle": "jmarkys-dk-61-keyboard",
       "description": "61-key touch-sensitive digital keyboard with 400+ tones, 200 rhythms, and USB-MIDI. Built-in speakers, recorder, and split/dual mode — a complete home and stage companion.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Keyboard",
       "tags": ["piano", "keyboard", "digital", "61-key"],
       "available": true,
@@ -134,17 +134,17 @@
         { "name": "Bundle", "position": 1, "values": ["Keyboard Only", "With Stand + Bench", "Complete Starter Pack"] }
       ],
       "variants": [
-        { "id": 80010071, "title": "Keyboard Only", "option1": "Keyboard Only", "price": "8499.00", "compare_at_price": null, "sku": "DVS-DK61", "available": true, "inventory_quantity": 12 },
-        { "id": 80010072, "title": "With Stand + Bench", "option1": "With Stand + Bench", "price": "10499.00", "compare_at_price": "11500.00", "sku": "DVS-DK61-SB", "available": true, "inventory_quantity": 7 },
-        { "id": 80010073, "title": "Complete Starter Pack", "option1": "Complete Starter Pack", "price": "12499.00", "compare_at_price": "14000.00", "sku": "DVS-DK61-CSP", "available": true, "inventory_quantity": 4 }
+        { "id": 80010071, "title": "Keyboard Only", "option1": "Keyboard Only", "price": "8499.00", "compare_at_price": null, "sku": "JMK-DK61", "available": true, "inventory_quantity": 12 },
+        { "id": 80010072, "title": "With Stand + Bench", "option1": "With Stand + Bench", "price": "10499.00", "compare_at_price": "11500.00", "sku": "JMK-DK61-SB", "available": true, "inventory_quantity": 7 },
+        { "id": 80010073, "title": "Complete Starter Pack", "option1": "Complete Starter Pack", "price": "12499.00", "compare_at_price": "14000.00", "sku": "JMK-DK61-CSP", "available": true, "inventory_quantity": 4 }
       ]
     },
     {
       "id": 8001008,
-      "title": "Davis Student Violin 4/4",
-      "handle": "davis-student-violin-44",
+      "title": "JMarky's Student Violin 4/4",
+      "handle": "jmarkys-student-violin-44",
       "description": "Hand-carved solid spruce top with maple back and sides. Includes bow, rosin, shoulder rest, and hard case. Setup and intonated in-house for ready-to-play performance.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Violin",
       "tags": ["violin", "strings", "classical", "student"],
       "available": true,
@@ -154,18 +154,18 @@
         { "name": "Size", "position": 1, "values": ["4/4 Full", "3/4", "1/2", "1/4"] }
       ],
       "variants": [
-        { "id": 80010081, "title": "4/4 Full", "option1": "4/4 Full", "price": "6499.00", "compare_at_price": "7200.00", "sku": "DVS-VLN-44", "available": true, "inventory_quantity": 8 },
-        { "id": 80010082, "title": "3/4", "option1": "3/4", "price": "6299.00", "compare_at_price": null, "sku": "DVS-VLN-34", "available": true, "inventory_quantity": 5 },
-        { "id": 80010083, "title": "1/2", "option1": "1/2", "price": "5999.00", "compare_at_price": null, "sku": "DVS-VLN-12", "available": true, "inventory_quantity": 4 },
-        { "id": 80010084, "title": "1/4", "option1": "1/4", "price": "5799.00", "compare_at_price": null, "sku": "DVS-VLN-14", "available": true, "inventory_quantity": 2 }
+        { "id": 80010081, "title": "4/4 Full", "option1": "4/4 Full", "price": "6499.00", "compare_at_price": "7200.00", "sku": "JMK-VLN-44", "available": true, "inventory_quantity": 8 },
+        { "id": 80010082, "title": "3/4", "option1": "3/4", "price": "6299.00", "compare_at_price": null, "sku": "JMK-VLN-34", "available": true, "inventory_quantity": 5 },
+        { "id": 80010083, "title": "1/2", "option1": "1/2", "price": "5999.00", "compare_at_price": null, "sku": "JMK-VLN-12", "available": true, "inventory_quantity": 4 },
+        { "id": 80010084, "title": "1/4", "option1": "1/4", "price": "5799.00", "compare_at_price": null, "sku": "JMK-VLN-14", "available": true, "inventory_quantity": 2 }
       ]
     },
     {
       "id": 8001009,
-      "title": "Davis U-23 Concert Ukulele",
-      "handle": "davis-u-23-ukulele",
+      "title": "JMarky's U-23 Concert Ukulele",
+      "handle": "jmarkys-u-23-ukulele",
       "description": "All-mahogany concert-scale ukulele with satin finish and geared tuners. Warm and mellow tone that stays in tune gig after gig.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Ukulele",
       "tags": ["ukulele", "concert", "acoustic"],
       "available": true,
@@ -175,16 +175,16 @@
         { "name": "Bundle", "position": 1, "values": ["Ukulele Only", "With Gig Bag + Tuner"] }
       ],
       "variants": [
-        { "id": 80010091, "title": "Ukulele Only", "option1": "Ukulele Only", "price": "1999.00", "compare_at_price": "2400.00", "sku": "DVS-U23", "available": true, "inventory_quantity": 30 },
-        { "id": 80010092, "title": "With Gig Bag + Tuner", "option1": "With Gig Bag + Tuner", "price": "2499.00", "compare_at_price": "2900.00", "sku": "DVS-U23-BDL", "available": true, "inventory_quantity": 18 }
+        { "id": 80010091, "title": "Ukulele Only", "option1": "Ukulele Only", "price": "1999.00", "compare_at_price": "2400.00", "sku": "JMK-U23", "available": true, "inventory_quantity": 30 },
+        { "id": 80010092, "title": "With Gig Bag + Tuner", "option1": "With Gig Bag + Tuner", "price": "2499.00", "compare_at_price": "2900.00", "sku": "JMK-U23-BDL", "available": true, "inventory_quantity": 18 }
       ]
     },
     {
       "id": 8001010,
-      "title": "Davis DMX-5 Drum Kit",
-      "handle": "davis-dmx-5-drum-kit",
+      "title": "JMarky's DMX-5 Drum Kit",
+      "handle": "jmarkys-dmx-5-drum-kit",
       "description": "Complete 5-piece drum kit with hardware, cymbals, throne, and sticks. Poplar shells deliver punchy, club-ready tones — perfect for practice rooms and small venues.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Drums",
       "tags": ["drums", "acoustic", "kit"],
       "available": true,
@@ -194,17 +194,17 @@
         { "name": "Color", "position": 1, "values": ["Jet Black", "Wine Red", "Midnight Blue"] }
       ],
       "variants": [
-        { "id": 80010101, "title": "Jet Black", "option1": "Jet Black", "price": "24999.00", "compare_at_price": "27500.00", "sku": "DVS-DMX5-JBK", "available": true, "inventory_quantity": 3 },
-        { "id": 80010102, "title": "Wine Red", "option1": "Wine Red", "price": "24999.00", "compare_at_price": null, "sku": "DVS-DMX5-WR", "available": true, "inventory_quantity": 2 },
-        { "id": 80010103, "title": "Midnight Blue", "option1": "Midnight Blue", "price": "25999.00", "compare_at_price": null, "sku": "DVS-DMX5-MB", "available": true, "inventory_quantity": 1 }
+        { "id": 80010101, "title": "Jet Black", "option1": "Jet Black", "price": "24999.00", "compare_at_price": "27500.00", "sku": "JMK-DMX5-JBK", "available": true, "inventory_quantity": 3 },
+        { "id": 80010102, "title": "Wine Red", "option1": "Wine Red", "price": "24999.00", "compare_at_price": null, "sku": "JMK-DMX5-WR", "available": true, "inventory_quantity": 2 },
+        { "id": 80010103, "title": "Midnight Blue", "option1": "Midnight Blue", "price": "25999.00", "compare_at_price": null, "sku": "JMK-DMX5-MB", "available": true, "inventory_quantity": 1 }
       ]
     },
     {
       "id": 8001011,
-      "title": "Davis Professional Cajon",
-      "handle": "davis-pro-cajon",
+      "title": "JMarky's Professional Cajon",
+      "handle": "jmarkys-pro-cajon",
       "description": "Birch body and playing face with adjustable internal snare wires. Crisp slap and deep bass — studio-friendly and road-ready.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Percussion",
       "tags": ["cajon", "percussion", "hand-drum", "acoustic"],
       "available": true,
@@ -214,16 +214,16 @@
         { "name": "Finish", "position": 1, "values": ["Natural Birch", "Walnut"] }
       ],
       "variants": [
-        { "id": 80010111, "title": "Natural Birch", "option1": "Natural Birch", "price": "3499.00", "compare_at_price": null, "sku": "DVS-CJN-NB", "available": true, "inventory_quantity": 9 },
-        { "id": 80010112, "title": "Walnut", "option1": "Walnut", "price": "3799.00", "compare_at_price": "4200.00", "sku": "DVS-CJN-WN", "available": true, "inventory_quantity": 5 }
+        { "id": 80010111, "title": "Natural Birch", "option1": "Natural Birch", "price": "3499.00", "compare_at_price": null, "sku": "JMK-CJN-NB", "available": true, "inventory_quantity": 9 },
+        { "id": 80010112, "title": "Walnut", "option1": "Walnut", "price": "3799.00", "compare_at_price": "4200.00", "sku": "JMK-CJN-WN", "available": true, "inventory_quantity": 5 }
       ]
     },
     {
       "id": 8001012,
-      "title": "Davis DA-30W Acoustic Amplifier",
-      "handle": "davis-da-30w-amp",
+      "title": "JMarky's DA-30W Acoustic Amplifier",
+      "handle": "jmarkys-da-30w-amp",
       "description": "30-watt dual-channel acoustic amplifier with built-in reverb, chorus, and 3-band EQ. Dedicated mic input, aux-in, and headphone out — a busker and coffeehouse favorite.",
-      "vendor": "Davis",
+      "vendor": "JMarky's",
       "product_type": "Amplifier",
       "tags": ["amp", "acoustic", "amplifier", "stage"],
       "available": true,
@@ -233,13 +233,13 @@
         { "name": "Model", "position": 1, "values": ["30W", "40W"] }
       ],
       "variants": [
-        { "id": 80010121, "title": "30W", "option1": "30W", "price": "5999.00", "compare_at_price": "6800.00", "sku": "DVS-DA30W", "available": true, "inventory_quantity": 6 },
-        { "id": 80010122, "title": "40W", "option1": "40W", "price": "7299.00", "compare_at_price": null, "sku": "DVS-DA40W", "available": true, "inventory_quantity": 3 }
+        { "id": 80010121, "title": "30W", "option1": "30W", "price": "5999.00", "compare_at_price": "6800.00", "sku": "JMK-DA30W", "available": true, "inventory_quantity": 6 },
+        { "id": 80010122, "title": "40W", "option1": "40W", "price": "7299.00", "compare_at_price": null, "sku": "JMK-DA40W", "available": true, "inventory_quantity": 3 }
       ]
     }
   ],
   "collections": [
-    { "id": 1, "handle": "all", "title": "All Instruments", "description": "Every Davis instrument and accessory in our shop." },
+    { "id": 1, "handle": "all", "title": "All Instruments", "description": "Every JMarky's instrument and accessory in our shop." },
     { "id": 2, "handle": "guitars", "title": "Guitars", "description": "Acoustic, electric, and bass guitars.", "tags": ["guitar", "bass"] },
     { "id": 3, "handle": "keyboards", "title": "Keyboards", "description": "Digital pianos and performance keyboards.", "tags": ["piano", "keyboard"] },
     { "id": 4, "handle": "percussion", "title": "Drums & Percussion", "description": "Drum kits, cajons, and hand percussion.", "tags": ["drums", "percussion"] },
@@ -247,11 +247,11 @@
     { "id": 6, "handle": "amps", "title": "Amps & Gear", "description": "Amplifiers and stage gear.", "tags": ["amp", "stage"] }
   ],
   "shop": {
-    "name": "Davis Musical Instruments",
+    "name": "JMarky's Music Co.",
     "currency": "PHP",
     "currency_symbol": "₱",
-    "email": "hello@davis.ph",
-    "domain": "davis.ph",
-    "description": "Trusted Filipino brand for guitars, keyboards, drums, and stage gear. Play what you love."
+    "email": "hello@jmarkys.co",
+    "domain": "jmarkys.co",
+    "description": "Guitars, keyboards, drums, and stage gear — curated and built by players, for players."
   }
 }
