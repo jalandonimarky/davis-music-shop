@@ -1,0 +1,11 @@
+{
+  "name": "sonido-musical",
+  "version": "1.0.0",
+  "description": "Shopify-ready musical instrument shop — local dev build",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 4321",
+    "dev:node": "npx --yes serve -l 4321 .",
+    "open": "open http://localhost:4321"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "general": {
+    "search": { "placeholder": "Search instruments…" },
+    "cart": {
+      "title": "Your Cart",
+      "empty": "Your cart is empty.",
+      "subtotal": "Subtotal",
+      "checkout": "Checkout"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "quantity": "Quantity",
+      "sku": "SKU",
+      "vendor": "Vendor"
+    }
+  }
+}

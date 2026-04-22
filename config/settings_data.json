@@ -1,0 +1,16 @@
+{
+  "current": {
+    "color_accent": "#c2410c",
+    "color_ink": "#1a1a1a",
+    "color_bg": "#fdfbf5",
+    "type_heading_font": "fraunces_n6",
+    "type_body_font": "system_n4"
+  },
+  "presets": {
+    "Default": {
+      "color_accent": "#c2410c",
+      "color_ink": "#1a1a1a",
+      "color_bg": "#fdfbf5"
+    }
+  }
+}

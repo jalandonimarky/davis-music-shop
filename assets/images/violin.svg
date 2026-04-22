@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="v-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef9c3"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="v-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b45309"/>
+      <stop offset="1" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#v-bg)"/>
+  <g transform="translate(200 210) rotate(-30)">
+    <path d="M-45 -60 Q-55 -30 -40 -10 Q-60 10 -55 40 Q-45 80 0 95 Q45 80 55 40 Q60 10 40 -10 Q55 -30 45 -60 Q30 -90 0 -88 Q-30 -90 -45 -60 Z" fill="url(#v-body)" stroke="#451a03" stroke-width="2.5"/>
+    <path d="M-8 -10 Q-12 0 -8 8 M8 -10 Q12 0 8 8" stroke="#1c1917" stroke-width="2" fill="none"/>
+    <rect x="-3" y="-140" width="6" height="90" fill="#1c1917"/>
+    <rect x="-8" y="-160" width="16" height="22" fill="#1c1917" rx="3"/>
+    <g stroke="#fafaf9" stroke-width="0.8">
+      <line x1="-2" y1="-138" x2="-2" y2="70"/>
+      <line x1="0" y1="-138" x2="0" y2="70"/>
+      <line x1="2" y1="-138" x2="2" y2="70"/>
+    </g>
+    <g transform="translate(90 -80) rotate(40)">
+      <rect x="0" y="0" width="140" height="3" fill="#d6b48a"/>
+      <rect x="0" y="-3" width="8" height="9" fill="#3f3f46"/>
+      <rect x="132" y="-3" width="8" height="9" fill="#3f3f46"/>
+    </g>
+  </g>
+</svg>

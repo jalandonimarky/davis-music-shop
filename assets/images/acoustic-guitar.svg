@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="ag-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="ag-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c2835a"/>
+      <stop offset="1" stop-color="#8b5a34"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#ag-bg)"/>
+  <g transform="translate(200 210) rotate(-20)">
+    <path d="M0 -120 L-12 -60 L-12 -20 L-70 20 L-80 90 Q-80 150 0 160 Q80 150 80 90 L70 20 L12 -20 L12 -60 Z" fill="url(#ag-body)" stroke="#5c3a1f" stroke-width="3"/>
+    <circle cx="0" cy="70" r="32" fill="#1f1410" stroke="#f5d99a" stroke-width="4"/>
+    <rect x="-10" y="-60" width="20" height="120" fill="#3b2416"/>
+    <rect x="-14" y="-150" width="28" height="40" fill="#3b2416" rx="3"/>
+    <g stroke="#f5f5f4" stroke-width="1.2">
+      <line x1="-6" y1="-148" x2="-6" y2="130"/>
+      <line x1="-2" y1="-148" x2="-2" y2="130"/>
+      <line x1="2" y1="-148" x2="2" y2="130"/>
+      <line x1="6" y1="-148" x2="6" y2="130"/>
+    </g>
+  </g>
+</svg>
