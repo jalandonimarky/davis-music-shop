@@ -1,5 +1,5 @@
 /* ============================================================
-   Sonido Musical — Shopify-style theme
+   JMarky's Music Co. — Shopify-style theme
    Mirrors Dawn theme conventions: CSS vars as design tokens,
    section-based layout, snippet class naming (card__, price__).
    ============================================================ */
@@ -780,4 +780,175 @@ button {
 .toast.is-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================================
+   Mobile optimizations (<= 768px and <= 480px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 16px;
+  }
+
+  /* Header */
+  .header__wrap {
+    padding: 12px 0;
+    gap: 12px;
+  }
+  .header__logo .logo-mark { font-size: 1.4rem; letter-spacing: 0.06em; }
+  .header__logo .logo-sub { font-size: 0.58rem; letter-spacing: 0.18em; }
+  .cart-toggle {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    gap: 6px;
+  }
+  .cart-toggle__count {
+    min-width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+  }
+
+  /* Section spacing */
+  .section { padding: 36px 0; }
+  .section__header {
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+  .section__header .btn { padding: 10px 16px; font-size: 0.85rem; }
+
+  /* Hero */
+  .hero { padding: 28px 0 20px; }
+  .hero__grid { gap: 24px; }
+  .hero__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 12px;
+  }
+  .hero__title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-bottom: 12px;
+  }
+  .hero__copy {
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+  }
+  .hero__ctas { flex-direction: column; gap: 10px; }
+  .hero__ctas .btn { width: 100%; }
+  .hero__visual { aspect-ratio: 16/11; }
+
+  /* Buttons */
+  .btn { padding: 12px 20px; font-size: 0.92rem; }
+
+  /* Product grid - 2 columns on phones */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .card-product__body { padding: 12px 12px 14px; }
+  .card-product__vendor { font-size: 0.68rem; margin-bottom: 4px; }
+  .card-product__title { font-size: 0.88rem; margin-bottom: 6px; }
+  .price__current { font-size: 0.92rem; }
+  .price__compare { font-size: 0.78rem; }
+  .card-product__badge {
+    top: 8px;
+    left: 8px;
+    font-size: 0.62rem;
+    padding: 3px 8px;
+  }
+
+  /* Collection filters - horizontal scroll */
+  .collection-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 calc(-1 * var(--gutter)) 20px;
+    padding: 4px var(--gutter);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .collection-filters::-webkit-scrollbar { display: none; }
+  .collection-filters button {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+
+  /* Product page */
+  .product { padding: 24px 0 48px; }
+  .product__grid { gap: 20px; }
+  .product__media { border-radius: var(--radius); }
+  .product__vendor { font-size: 0.72rem; margin-bottom: 6px; }
+  .product__title { margin-bottom: 10px; }
+  .product__price { font-size: 1.2rem; margin-bottom: 14px; }
+  .product__description { font-size: 0.95rem; margin-bottom: 20px; }
+
+  .variant-picker__label { font-size: 0.8rem; margin-bottom: 8px; }
+  .variant-option {
+    padding: 9px 14px;
+    font-size: 0.85rem;
+  }
+
+  .quantity-row { gap: 10px; }
+  .quantity button { width: 36px; height: 40px; }
+  .quantity input { width: 40px; }
+
+  .product__meta { margin-top: 20px; padding-top: 18px; font-size: 0.85rem; }
+  .product__meta dl { grid-template-columns: auto 1fr; gap: 6px 14px; }
+
+  /* Cart drawer - closer to edge */
+  .cart-drawer__header { padding: 16px 18px; }
+  .cart-drawer__items { padding: 8px 18px; }
+  .cart-drawer__footer { padding: 16px 18px 20px; }
+  .cart-line {
+    grid-template-columns: 60px 1fr auto;
+    gap: 12px;
+    padding: 12px 0;
+  }
+  .cart-line__media { width: 60px; height: 60px; }
+  .cart-line__title { font-size: 0.88rem; }
+  .cart-line__variant { font-size: 0.74rem; margin-bottom: 6px; }
+
+  /* Footer */
+  .site-footer { padding: 40px 0 24px; margin-top: 48px; }
+  .footer__grid { gap: 24px; margin-bottom: 28px; }
+  .footer__brand { font-size: 1.25rem; }
+  .footer__copy { font-size: 0.9rem; }
+  .footer__col h4 { margin-bottom: 12px; font-size: 0.82rem; }
+  .footer__col a { font-size: 0.88rem; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; font-size: 0.78rem; }
+
+  /* Typography */
+  h2 { font-size: clamp(1.5rem, 5vw, 1.9rem); }
+}
+
+@media (max-width: 480px) {
+  /* Narrower phones: smaller cards can stay 2-up but tighter */
+  .product-grid { gap: 10px; }
+  .card-product { border-radius: 8px; }
+  .card-product__body { padding: 10px 10px 12px; }
+
+  /* Hide nav-level logo subtext on very small screens if it wraps */
+  .header__logo .logo-sub { font-size: 0.56rem; letter-spacing: 0.14em; }
+
+  /* Cart drawer fills screen on tiny viewports */
+  .cart-drawer { width: 100%; }
+
+  /* Section header stack */
+  .section__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .section__header .btn { align-self: flex-start; }
+
+  /* Hero visual slightly shorter */
+  .hero__visual { aspect-ratio: 3/2; }
+}
+
+/* Tap target boost for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn, .cart-toggle, .variant-option, .cart-line__qty button, .quantity button {
+    min-height: 44px;
+  }
+  .card-product:hover { transform: none; box-shadow: var(--shadow-sm); }
+  .card-product:hover .card-product__media img { transform: none; }
 }
