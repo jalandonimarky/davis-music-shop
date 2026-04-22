@@ -788,12 +788,12 @@ button {
 
 @media (max-width: 768px) {
   :root {
-    --gutter: 16px;
+    --gutter: 20px;
   }
 
   /* Header */
   .header__wrap {
-    padding: 12px 0;
+    padding: 14px 0;
     gap: 12px;
   }
   .header__logo .logo-mark { font-size: 1.4rem; letter-spacing: 0.06em; }
@@ -922,10 +922,14 @@ button {
 }
 
 @media (max-width: 480px) {
-  /* Narrower phones: smaller cards can stay 2-up but tighter */
-  .product-grid { gap: 10px; }
-  .card-product { border-radius: 8px; }
-  .card-product__body { padding: 10px 10px 12px; }
+  :root {
+    --gutter: 18px;
+  }
+
+  /* Narrower phones: 2-up cards with breathing gap */
+  .product-grid { gap: 12px; }
+  .card-product { border-radius: 10px; }
+  .card-product__body { padding: 11px 11px 13px; }
 
   /* Hide nav-level logo subtext on very small screens if it wraps */
   .header__logo .logo-sub { font-size: 0.56rem; letter-spacing: 0.14em; }
