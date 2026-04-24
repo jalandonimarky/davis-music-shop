@@ -1,0 +1,53 @@
+<section class="hero">
+  <div class="page-width hero__grid">
+    <div>
+      {%- if section.settings.eyebrow != blank -%}
+        <div class="hero__eyebrow">{{ section.settings.eyebrow }}</div>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h1 class="hero__title">{{ section.settings.title | newline_to_br }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.copy != blank -%}
+        <p class="hero__copy">{{ section.settings.copy }}</p>
+      {%- endif -%}
+
+      <div class="hero__ctas">
+        {%- if section.settings.cta1_text != blank -%}
+          <a href="{{ section.settings.cta1_link }}" class="btn btn--primary">{{ section.settings.cta1_text }}</a>
+        {%- endif -%}
+        {%- if section.settings.cta2_text != blank -%}
+          <a href="{{ section.settings.cta2_link }}" class="btn btn--secondary">{{ section.settings.cta2_text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: alt: section.settings.title, loading: 'eager', widths: '400, 800, 1200' }}
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "By players. For players." },
+    { "type": "textarea", "id": "title", "label": "Title", "default": "JMarky's instruments.\nTuned for the stage." },
+    { "type": "textarea", "id": "copy", "label": "Copy", "default": "From first chords to sold-out nights — guitars, keyboards, drums, and amps built to last, priced within reach, and set up ready to play." },
+    { "type": "text", "id": "cta1_text", "label": "Primary CTA text", "default": "Shop the collection" },
+    { "type": "url", "id": "cta1_link", "label": "Primary CTA link" },
+    { "type": "text", "id": "cta2_text", "label": "Secondary CTA text", "default": "Browse guitars" },
+    { "type": "url", "id": "cta2_link", "label": "Secondary CTA link" },
+    { "type": "image_picker", "id": "image", "label": "Hero image" }
+  ],
+  "presets": [
+    { "name": "Hero", "category": "Image" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,36 @@
+{
+  "general": {
+    "search": {
+      "placeholder": "Search instruments…",
+      "submit": "Search"
+    },
+    "404": {
+      "title": "404 — Page not found",
+      "subtext": "The page you were looking for doesn't exist.",
+      "link": "Back to home"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Your Cart",
+      "empty": "Your cart is empty.",
+      "subtotal": "Subtotal",
+      "checkout": "Checkout",
+      "update": "Update cart",
+      "remove": "Remove",
+      "quantity": "Quantity",
+      "note": "Shipping & taxes calculated at checkout"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "quantity": "Quantity",
+      "sku": "SKU",
+      "vendor": "Vendor",
+      "sale": "Sale"
+    }
+  }
+}

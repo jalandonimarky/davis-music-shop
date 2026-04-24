@@ -1,0 +1,18 @@
+<section class="section">
+  <div class="page-width">
+    <h1>{{ blog.title }}</h1>
+    <div class="product-grid">
+      {%- for article in blog.articles -%}
+        <a href="{{ article.url }}" class="card-product">
+          {%- if article.image != blank -%}
+            <div class="card-product__media">{{ article.image | image_url: width: 600 | image_tag: alt: article.title, loading: 'lazy' }}</div>
+          {%- endif -%}
+          <div class="card-product__body">
+            <div class="card-product__vendor">{{ article.published_at | date: "%b %d, %Y" }}</div>
+            <h3 class="card-product__title">{{ article.title }}</h3>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

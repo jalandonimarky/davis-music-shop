@@ -1,0 +1,83 @@
+<section class="product">
+  <div class="page-width product__grid">
+    <figure class="product__media">
+      {%- if product.featured_image != blank -%}
+        {{ product.featured_image | image_url: width: 1200 | image_tag: alt: product.title, loading: 'eager', widths: '400, 800, 1200' }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </figure>
+
+    <div class="product__info">
+      <div class="product__vendor">{{ product.vendor }}</div>
+      <h1 class="product__title">{{ product.title }}</h1>
+
+      <div class="product__price">
+        {% render 'price', product: product %}
+      </div>
+
+      {%- if product.description != blank -%}
+        <div class="product__description rte">{{ product.description }}</div>
+      {%- endif -%}
+
+      {% form 'product', product, id: 'product-form', novalidate: 'novalidate' %}
+        {%- unless product.has_only_default_variant -%}
+          <div class="variant-picker">
+            <label class="variant-picker__label" for="variant-select">
+              {{ product.options.first }}
+            </label>
+            <select id="variant-select" name="id" class="variant-picker__select">
+              {%- for variant in product.variants -%}
+                <option
+                  value="{{ variant.id }}"
+                  {% if variant == product.selected_or_first_available_variant %}selected{% endif %}
+                  {% unless variant.available %}disabled{% endunless %}
+                >
+                  {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} (sold out){% endunless %}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        {%- else -%}
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+        {%- endunless -%}
+
+        <div class="quantity-row">
+          <div class="quantity">
+            <button type="button" data-qty-dec aria-label="Decrease">−</button>
+            <input type="number" name="quantity" min="1" value="1" data-qty-input>
+            <button type="button" data-qty-inc aria-label="Increase">+</button>
+          </div>
+          <button
+            type="submit"
+            class="btn btn--primary btn--block"
+            name="add"
+            {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}
+          >
+            {%- if product.selected_or_first_available_variant.available -%}
+              Add to cart
+            {%- else -%}
+              Sold out
+            {%- endif -%}
+          </button>
+        </div>
+      {% endform %}
+
+      <div class="product__meta">
+        <dl>
+          <dt>SKU</dt><dd>{{ product.selected_or_first_available_variant.sku | default: '—' }}</dd>
+          <dt>Type</dt><dd>{{ product.type | default: '—' }}</dd>
+          <dt>Vendor</dt><dd>{{ product.vendor }}</dd>
+          <dt>Availability</dt><dd>{% if product.available %}In stock{% else %}Sold out{% endif %}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": []
+}
+{% endschema %}

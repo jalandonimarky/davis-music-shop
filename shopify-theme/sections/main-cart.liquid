@@ -1,0 +1,59 @@
+<section class="section">
+  <div class="page-width">
+    <h1>Your Cart</h1>
+
+    {%- if cart.item_count > 0 -%}
+      <form action="{{ routes.cart_url }}" method="post" novalidate>
+        {%- for item in cart.items -%}
+          <div class="cart-line">
+            <div class="cart-line__media">
+              {%- if item.image != blank -%}
+                {{ item.image | image_url: width: 150 | image_tag: alt: item.title, loading: 'lazy' }}
+              {%- endif -%}
+            </div>
+            <div>
+              <h4 class="cart-line__title"><a href="{{ item.url }}">{{ item.product.title }}</a></h4>
+              {%- unless item.variant.title contains 'Default' -%}
+                <div class="cart-line__variant">{{ item.variant.title }}</div>
+              {%- endunless -%}
+              <div class="cart-line__controls">
+                <input
+                  type="number"
+                  name="updates[{{ item.key }}]"
+                  value="{{ item.quantity }}"
+                  min="0"
+                  aria-label="Quantity"
+                >
+                <a href="{{ item.url_to_remove }}" class="cart-line__remove">Remove</a>
+              </div>
+            </div>
+            <div class="cart-line__price">{{ item.final_line_price | money }}</div>
+          </div>
+        {%- endfor -%}
+
+        <div class="cart-drawer__totals">
+          <span>Subtotal</span>
+          <span>{{ cart.total_price | money }}</span>
+        </div>
+        <div class="cart-drawer__note">Shipping &amp; taxes calculated at checkout</div>
+
+        <div style="display:flex; gap:12px; margin-top:16px;">
+          <button type="submit" name="update" class="btn btn--secondary">Update cart</button>
+          <button type="submit" name="checkout" class="btn btn--primary">Checkout</button>
+        </div>
+      </form>
+    {%- else -%}
+      <div class="cart-drawer__empty">
+        <p>Your cart is empty.</p>
+        <a href="{{ routes.all_products_collection_url }}" class="btn btn--secondary" style="margin-top:14px">Browse instruments</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Cart",
+  "settings": []
+}
+{% endschema %}

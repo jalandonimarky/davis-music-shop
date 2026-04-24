@@ -1,0 +1,34 @@
+<header class="site-header" role="banner">
+  <div class="page-width header__wrap">
+    <a class="header__logo" href="{{ routes.root_url }}">
+      <span class="logo-mark">{{ section.settings.logo_text | default: shop.name | upcase }}</span>
+      {%- if section.settings.logo_sub != blank -%}
+        <span class="logo-sub">{{ section.settings.logo_sub }}</span>
+      {%- endif -%}
+    </a>
+
+    <nav class="header__nav" aria-label="Primary">
+      {%- for link in linklists[section.settings.menu].links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="header__actions">
+      <a href="{{ routes.cart_url }}" class="cart-toggle" data-cart-open aria-label="Open cart">
+        <span>Cart</span>
+        <span class="cart-toggle__count" data-cart-count>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    { "type": "text", "id": "logo_text", "label": "Logo mark", "default": "JMARKY'S" },
+    { "type": "text", "id": "logo_sub", "label": "Logo subtext", "default": "Music Co." },
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" }
+  ]
+}
+{% endschema %}

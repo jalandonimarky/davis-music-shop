@@ -1,0 +1,31 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "JMarky's Music Co.",
+    "theme_version": "1.0.0",
+    "theme_author": "JMarky",
+    "theme_documentation_url": "https://github.com/jalandonimarky/davis-music-shop",
+    "theme_support_url": "https://github.com/jalandonimarky/davis-music-shop/issues"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "color", "id": "color_accent", "label": "Accent", "default": "#c8102e" },
+      { "type": "color", "id": "color_ink", "label": "Ink", "default": "#0d0d0d" },
+      { "type": "color", "id": "color_bg", "label": "Background", "default": "#ffffff" }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      { "type": "font_picker", "id": "type_heading_font", "label": "Heading font", "default": "bebas_neue_n4" },
+      { "type": "font_picker", "id": "type_body_font", "label": "Body font", "default": "assistant_n4" }
+    ]
+  },
+  {
+    "name": "Branding",
+    "settings": [
+      { "type": "image_picker", "id": "favicon", "label": "Favicon", "info": "Recommended: 32x32px" }
+    ]
+  }
+]

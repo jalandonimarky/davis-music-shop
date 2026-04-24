@@ -1,0 +1,29 @@
+{%- comment -%}
+  Renders a product card.
+  Accepts: product (required) — product object
+{%- endcomment -%}
+
+{%- assign on_sale = false -%}
+{%- if product.compare_at_price > product.price -%}
+  {%- assign on_sale = true -%}
+{%- endif -%}
+
+<a class="card-product" href="{{ product.url }}">
+  <div class="card-product__media">
+    {%- if on_sale -%}
+      <span class="card-product__badge">Sale</span>
+    {%- endif -%}
+    {%- if product.featured_image != blank -%}
+      {{ product.featured_image | image_url: width: 600 | image_tag: alt: product.title, loading: 'lazy', widths: '300, 600, 900' }}
+    {%- else -%}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="card-product__body">
+    {%- if product.vendor != blank -%}
+      <div class="card-product__vendor">{{ product.vendor }}</div>
+    {%- endif -%}
+    <h3 class="card-product__title">{{ product.title }}</h3>
+    {% render 'price', product: product %}
+  </div>
+</a>

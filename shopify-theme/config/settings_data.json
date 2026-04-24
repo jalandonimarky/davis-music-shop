@@ -1,0 +1,16 @@
+{
+  "current": {
+    "color_accent": "#c8102e",
+    "color_ink": "#0d0d0d",
+    "color_bg": "#ffffff",
+    "type_heading_font": "bebas_neue_n4",
+    "type_body_font": "assistant_n4"
+  },
+  "presets": {
+    "Default": {
+      "color_accent": "#c8102e",
+      "color_ink": "#0d0d0d",
+      "color_bg": "#ffffff"
+    }
+  }
+}
